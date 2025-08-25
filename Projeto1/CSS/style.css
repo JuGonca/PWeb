@@ -1,5 +1,15 @@
+@font-face {
+    font-family: 'Texto-normal';
+    src: url(./fonts/FormaleScript_PERSONAL_USE_ONLY.otf);
+    font-weight: normal;
+    font-style: normal;
+}
 body{
     background-color: #b10f2e;
+}
+
+h1, h2, h3{
+    font-family: 'Texto-normal';
 }
 
 .nav-menu-item{
