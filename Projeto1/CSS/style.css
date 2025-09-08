@@ -19,7 +19,8 @@
 
 :root{
     --corprincipal: rgb(254, 220, 210);
-    --cortitulo:rgb(66, 0, 15);
+    --cortitulo1:#42000f;
+    --cortitulo2: rgb(234, 38, 38);
 }
 
 html{
@@ -37,14 +38,14 @@ h1{
     font-family: 'H1';
     font-size: 70px;
     text-align: center;
-    color: var(--cortitulo);
+    color: var(--cortitulo1);
 }
 
 h2{
     font-family: 'h2-subtitulo';
     font-size: 50px;
     margin: 0px;
-    color: var(--cortitulo);
+    color: var(--cortitulo1);
 }
 h3{
     font-family: 'h3';
@@ -52,7 +53,7 @@ h3{
     margin: 0px;
     border: 0;
     padding: 0;
-    color:var(--cortitulo);
+    color:var(--cortitulo1);
 }
 
 
@@ -79,6 +80,10 @@ p, pre, li, dt, dd, th, td, q{
 .home-data{
     margin: auto;
     float: left;
+    justify-content: center;
+    align-items: center;
+    padding-left: 80px;
+    padding-right:100px;
 }
 .home-img{
     margin: auto;
@@ -137,11 +142,33 @@ p, pre, li, dt, dd, th, td, q{
     width: 300px;
 }
 
+.container-geral{
+    padding: 20px
+}
+
 /*Sessão Sobre*/
 #about{
     background-color: #c12828;
 }
 
+/*Sessão Formação*/
+#formarion{
+    background-color: #6d0202;
+    color: var(--corprincipal)
+}
+#title-formacao, .formation-subtitle{
+    color: var(--cortitulo2);
+}
+
+/*Sessão Habilidades*/
+#skills{
+    background-color: #c12828;
+}
+
+.skills-container2{
+    display: flex;
+    align-items: center;
+}
 
 /*Sessão Projeos*/
 .projects-container{
