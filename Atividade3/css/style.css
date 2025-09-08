@@ -1,0 +1,40 @@
+/*Configuração Fonts*/
+@font-face {
+    font-family: 'Titulo-Sub';
+    src: url(./fonts/Roboto-Bold.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Parágrafos';
+    src: url(./fonts/Roboto-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Links';
+    src: url(./fonts/Roboto-Italic.ttf);
+}
+
+/*Configuração Gerais*/
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 5%;
+}
+
+h1,h2{
+    font-family: 'Titulo-Sub';
+}
+
+p,h3,li{ 
+    font-family: 'Parágrafos';
+    text-align: justify;
+    font-size: 17px;
+}
+
+.refer-link{
+    font-family: 'Links';
+}
