@@ -1,0 +1,53 @@
+body{
+    margin: 10px;
+    padding: 0px;
+}
+
+.container-animes{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto;
+    grid-template-rows: 200px 250px;
+    grid-template-areas: 
+    'a a b b'
+    'a a c c';
+}
+
+.anime{
+    background-color: #ff8c00;
+    border-radius: 10px;
+}
+
+.elements-anime{
+    display: flex;
+}
+
+.a{
+  grid-area: a;
+  text-align: left;
+  padding: 10px;
+}
+.a img{
+    margin-right:10px;
+}
+
+.b{
+    grid-area: b;
+    text-align: left;
+    padding: 10px;
+}
+.b img{
+    margin-right: 10px;
+}
+.b a{
+    padding: 15%;
+}
+
+.c{
+  grid-area: c;
+  text-align: left;
+  padding: 10px;
+}
+.c img{
+    margin-right: 10px;
+}
