@@ -3,11 +3,12 @@ body{
     padding: 0px;
 }
 
+/*Sessão Animes*/
 .container-animes{
     display: grid;
     grid-gap: 10px;
     grid-template-columns: auto;
-    grid-template-rows: 200px 250px;
+    grid-template-rows: auto auto;
     grid-template-areas: 
     'a a b b'
     'a a c c';
@@ -23,9 +24,9 @@ body{
 }
 
 .a{
-  grid-area: a;
-  text-align: left;
-  padding: 10px;
+    grid-area: a;
+    text-align: justify;
+    padding: 10px;
 }
 .a img{
     margin-right:10px;
@@ -33,7 +34,7 @@ body{
 
 .b{
     grid-area: b;
-    text-align: left;
+    text-align: justify;
     padding: 10px;
 }
 .b img{
@@ -44,10 +45,66 @@ body{
 }
 
 .c{
-  grid-area: c;
-  text-align: left;
-  padding: 10px;
+    grid-area: c;
+    text-align: justify;
+    padding: 10px;
 }
 .c img{
+    margin-right: 10px;
+}
+
+/*Sessão Mangá*/
+.container-manga{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+    'd d d f g'
+    'e e e f g'
+}
+
+.manga{
+    background-color: #a600ff;
+    border-radius: 10px;
+}
+
+.elements-manga{
+    display: flex;
+}
+
+.d{
+    grid-area: d;
+    text-align: justify;
+    padding: 10px;
+}
+.d img{
+    margin-right: 10px;
+}
+
+.e{
+    grid-area: e;
+    text-align: justify;
+    padding: 10px;
+}
+.e img{
+    margin-right: 10px;
+}
+
+.f{
+    grid-area: f;
+    text-align: justify;
+    padding: 10px;
+}
+.f img{
+    margin-right: 10px;
+}
+
+.g{
+    grid-area: g;
+    text-align: justify;
+    padding: 10px;
+}
+.g img{
     margin-right: 10px;
 }
