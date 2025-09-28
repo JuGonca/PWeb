@@ -35,11 +35,20 @@ body{
     padding: 0px;
 
     background-image: url(./imgs/wallpaper-butterfly.jpg);
-    background-size:contain;
-    background-position: center;
+    background-size:cover;
+    background-position: center top;
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+
+    min-height: 100vh;
     
 }
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
 h1{
     font-family: 'Titulo-Principal';
     margin: 10px;
@@ -111,6 +120,20 @@ header{
     color:#42206e;
     background-color: #9F4BFF;
     border-radius: 10px;
+}
+
+.container-animes,
+.container-manga,
+.container-games {
+    display: grid;
+    grid-template-columns: 1fr; /* uma coluna em telas pequenas */
+    gap: 10px;
+}
+
+.anime, .game, .manga{
+    display: flex;
+    flex-direction: column; /* empilha imagem + texto */
+    flex-wrap: wrap;
 }
 
 /*Sessão Animes*/
@@ -309,3 +332,133 @@ i{
     font-size: 30px;
     padding: 10px;
 }
+
+/*Responsividade*/
+/*Tablets*/
+@media (max-width: 1024px){
+    body{
+        margin: 0;
+        background-size: cover; 
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    };
+
+    header{
+        margin-bottom: 10%;
+    }
+
+    .container-animes {
+    grid-template-areas: 
+      "a a"
+      "b b"
+      "c c";
+  }
+
+  .container-manga {
+    grid-template-areas: 
+      "d d"
+      "e e"
+      "f f"
+      "g g";
+  }
+
+  .container-games {
+    grid-template-areas: 
+      "h h"
+      "i i"
+      "j j"
+      "k k";
+  }
+
+  .contato {
+        display: flex;        /* garante layout flexível */
+        justify-content: flex-end; /* mantém no canto direito */
+        gap: 10px;   
+        padding-left: 5%;         /* espaçamento entre os ícones */
+        flex-wrap: nowrap;    /* evita quebra de linha */
+               /* diminui o espaço entre os ícones */
+    }
+
+    i{
+        font-size: 20px;
+        padding: 10px;
+    }
+
+}
+
+/*Celulares*/
+@media (max-width: 768px) {
+    body{
+        margin: 0;
+        background-size: cover; 
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+
+    header{
+        margin-bottom: 10%;
+    }
+    
+    .nav-menu-item {
+        height: auto;
+        padding: 10px;
+    }
+    .nav-item {
+        margin: 30px;
+    }
+
+  /* Containers */
+    .container-animes,
+    .container-manga,
+    .container-games {
+        display: grid;
+        gap: 10px;
+        grid-template-rows: auto auto;
+
+
+    }
+    .elements-anime, .elements-manga, .elements-game {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* centraliza o conteúdo */
+    }
+
+    .container-animes {
+    grid-template-areas: 
+      "a"
+      "b"
+      "c";
+  }
+
+  .container-manga {
+    grid-template-areas: 
+      "d"
+      "e"
+      "f"
+      "g";
+  }
+
+  .container-games {
+    grid-template-areas: 
+      "h"
+      "i"
+      "j"
+      "k";
+  }
+
+  /*Footer*/
+  .contato {
+        display: flex;        
+        justify-content: flex-end; 
+        gap: 10px;  
+        padding-left: 5%;          
+        flex-wrap: nowrap;    
+    }
+
+  /* Ícones menores */
+  i{
+        font-size: 15px;
+        padding-left: 10px;
+    }
+}
+
