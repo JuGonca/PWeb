@@ -27,13 +27,18 @@
 /*Formatação Geral*/
 html{
     scroll-behavior: smooth;
+    scroll-padding-top: 100px;
 }
 
 body{
     margin: 0px;
     padding: 0px;
 
-    background: linear-gradient(to bottom, #cd88ff, #9a84fd);
+    background-image: url(./imgs/wallpaper-butterfly.jpg);
+    background-size:contain;
+    background-position: center;
+    background-attachment: fixed;
+    
 }
 h1{
     font-family: 'Titulo-Principal';
@@ -48,12 +53,22 @@ h2{
 h1, h2{
     color: #5E3A8C;
     margin: 10px;
+    text-shadow: 
+    -1px -1px 0 #cab0ff,
+     1px -1px 0 #cab0ff,
+    -1px  1px 0 #cab0ff,
+     1px  1px 0 #cab0ff;
 }
 
 h3{
     font-family: 'Subtitulo-2';
     font-size: 25px;
     color: #7B4BB1;
+        text-shadow: 
+    -1px -1px 0 #cab0ff,
+     1px -1px 0 #cab0ff,
+    -1px  1px 0 #cab0ff,
+     1px  1px 0 #cab0ff;
 
     text-align: center;
     margin-bottom: 5px;
@@ -111,7 +126,7 @@ header{
 }
 
 .anime{
-    background-color: #E3D9F7;
+    background-color: #e3d9f7a1;
     border-radius: 10px;
 }
 
@@ -168,7 +183,7 @@ a{
 }
 
 .manga{
-    background-color: #E3D9F7;
+    background-color: #e3d9f7a1;
     border-radius: 10px;
 }
 .manga h3{
@@ -230,7 +245,7 @@ a{
 }
 
 .game{
-    background-color: #E3D9F7;
+    background-color: #e3d9f7a1;
     border-radius: 10px;
 }
 
@@ -251,5 +266,31 @@ a{
 
 .k{
     grid-area: k;
+    padding: 10px;
+}
+
+/*Rodapé*/
+footer{
+    background-color: #42206e;
+    margin-top: 70px;
+}
+.rodape{
+    display: flex;
+    justify-content: space-between;   
+    align-items: center;              
+    padding: 50px 40px;
+}
+
+.descricao{
+    text-align: left;
+}
+
+.contato{
+    text-align: right;
+    padding-right: 10%;
+}
+
+i{
+    font-size: 30px;
     padding: 10px;
 }
