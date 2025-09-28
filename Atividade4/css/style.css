@@ -138,9 +138,27 @@ a{
     color: #9F4BFF;
     text-decoration: none;
     font-family: 'Paragrafos';
+    justify-content: center;
 }
+.anime a{
+    color: #b97cff;
+    text-decoration: none;
+    padding: 5px;
+    background-color: #5c2e99;
+    border-radius: 10px;
+
+    font-family: 'Paragrafos';
+    justify-content: center;
+}
+
 .anime a:hover{
-   color: #7A1FFF;
+   color: #5c2e99;
+   background-color: #b97cff;
+   padding: 5px;
+   border-radius: 10px;
+
+   font-family: 'Paragrafos';
+   
 }
 
 .a{
@@ -157,9 +175,6 @@ a{
 }
 .b img{
     margin-right: 10px;
-}
-.b a{
-    padding: 15%;
 }
 
 .c{
