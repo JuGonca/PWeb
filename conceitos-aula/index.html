@@ -180,5 +180,43 @@
       <li>foot - Refere-se ao rodapé da página.</li>
       <li>article - é o conteúdo em si, como noticia ou post.</li>
     </ul>
+
+    <br>
+
+    <h2>Formulários</h2>
+    <p>Os formulários são utilizados para insersão de dador e interação do usuário com o navegador. Tudo o que estiver dentro da tag form será compreendido como fazendo parte do formulário.</p>
+    <ul>
+      <li>label - É o título ou rótulo do campo.</li>
+      <li>input - É a tag do campo de entrada, nela serão inseridos os dados para a interação com o formulário. Para saber o tipo de dado, utilizamos o atributo type dentro da tag. Exemplo: 
+      <form>
+      <p><label>Nome:</label><input type="text"></p>
+      <p><label>Email:</label><input type="email"></p>
+      <p><label> Aluno:</label><input type=“checkbox”></p></form>
+      </li>
+    </ul>
+    <h3>Atributos dos formulários</h3>
+    <ul>
+      <li>action - indica para onde os dados informados no input serão submetidos.</li>
+      <li>method - Especifica o método de submissão usado</li>
+      <ul>
+        <li>get - default, o conteúdo do formulário é anexado no final da url informada no action.</li>
+        <li>post - o conteúdo do formulário é identificado, e em blocos é enviado até a url informada.</li>
+      </ul>
+      <li>enctype - define como os dados do formulário são codificados antes de serem enviados ao servidor. É normalmente usado quando o method é post.</li>
+      <li>fieldset - Serve para agrupar um conjunto de campos de um formulário que estão interligados.</li>
+      <li>legend - é a legenda do campo.
+        <form method="post">
+          <fieldset>
+          <legend>Login</legend>
+          <label for="email">E-mail: </label>
+          <input type="text" name="email"> <br />
+          <label for="senha">Senha: </label>
+          <input type="password" name="senha">
+          </fieldset>
+        </form>
+      </li>
+      
+
+    </ul>
     </body>
 </html>
