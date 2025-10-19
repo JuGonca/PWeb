@@ -4,28 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Inicial</title>
+
+    <link rel="stylesheet" href="./css/menuP-style.css">
 </head>
 <body>
     <header>
         <nav>
             <div class="nav-menu">
-                <ul>
-                    <li>Inicio</li>
-                    <li>Sobre</li>
-                    <li>Benefícios</li>
-                    <li>Como Funciona</li>
-                    <li>Cadastro</li>
+                <ul class="itens">
+                    <li class="menu-item"><a href="#inicio">Inicio</a></li>
+                    <li class="menu-item"><a href="#sobre">Sobre</a></li>
+                    <li class="menu-item"><a href="#beneficios">Benefícios</a></li>
+                    <li class="menu-item"><a href="como-funciona">Como Funciona</a></li>
                 </ul>
-            </div>
-            <div class="login-cadastro">
-                <button id="cadastro" class="cadastro">Cadastre-se</button>
-                <button id="cadastro" class="login">Entrar</button>
+                <div class="login-cadastro">
+                    <button id="cadastro" class="cadastro">Cadastre-se</button>
+                    <button id="cadastro" class="login">Entrar</button>
+                </div>
             </div>
         </nav>
     </header>
     <main>
         <div class="container-principal">
-            <section class="inicio">
+            <section id="inicio">
                 <div class="inicio txt">
                     <h1>NUTRICODE - Seu Treino e Sua Alimentação em um só lugar!</h1>
                     <p>Monte dietas, crie treinos e acompanhe seu progresso com ajuda personalizada.</p>
@@ -35,7 +36,7 @@
                     <img src="./imgs/LePose 2.png" alt="mascote Nutricode">
                 </div>
             </section>
-            <section class="sobre">
+            <section id="sobre">
                 <div class="sobre txt">
                     <h2>Sobre</h2>
                     <p>O NutriCode combina treino e nutrição para criar uma rotina saudável feita pra você.</p>
@@ -44,7 +45,7 @@
                     <img src="./imgs/Feliz e comida.png" alt="mascote com peso e comida">
                 </div>
             </section>
-            <section class="beneficios">
+            <section id="beneficios">
                 <div class="beneficios txt">
                     <h2>Benefícios</h2>
                     <ul>
@@ -59,7 +60,7 @@
                     <img src="./imgs/trofeuNutri 1.png" alt="mascote com troféu">
                 </div>
             </section>
-            <section class="como-funciona">
+            <section id="como-funciona">
                 <div class="comofunc txt">
                     <ol>
                         <li>Crie seu perfil e defina seus objetivos</li>
@@ -71,7 +72,7 @@
                     <img src="./imgs/tome-removebg-preview 2.png" alt="mascote com livro">
                 </div>
             </section>
-            <section class="cadastro">
+            <section id="cadastro">
                 <div class="cadastro txt">
 
                 </div>
@@ -81,7 +82,7 @@
             </section>
         </div>
     </main>
-    <footer>
+    <footer class="rodape">
         <div class="footer left">
             <a href="https://github.com/Neo-TimeOut">Renan</a>
             <a href="https://github.com/eiKuan">Kauã</a>
