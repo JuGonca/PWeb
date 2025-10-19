@@ -162,3 +162,15 @@ section{
     grid-area: i;
     justify-content: right;
 }
+
+/*Rodapé*/
+.rodape{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nomes-integrantes{
+    justify-content: center;
+    align-items: center;
+}
