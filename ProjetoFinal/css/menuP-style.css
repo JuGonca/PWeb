@@ -58,3 +58,107 @@ nav{
 .login-cadastro button{
     margin: 2%;
 }
+
+/*Main*/
+main{
+    margin: 5%;
+}
+
+section{
+    height: 10%;
+    width: 100%;
+}
+/*Inicio*/
+#inicio{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'a a a b';
+    justify-content: space-between;
+    align-items: center;
+}
+.inicio.txt{
+    grid-area: a;
+    display: block;
+    justify-content: left;
+}
+.inicio.img{
+    grid-area: b;
+    justify-content: right;
+}
+
+/*Sobre*/
+#sobre{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'c c c d';
+    justify-content: space-between;
+    align-items: center;
+}
+.sobre.txt{
+    grid-area: c;
+    display: block;
+    justify-content: left;
+}
+.sobre.img{
+    grid-area: d;
+    justify-content: right;
+}
+
+/*Beneficios*/
+#beneficios{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'e e e f';
+    justify-content: space-between;
+    align-items: center;
+}
+.beneficios.txt{
+    grid-area: e;
+    display: block;
+    justify-content: left;
+}
+.beneficios.img{
+    grid-area: f;
+    justify-content: right;
+}
+
+/*Como Funciona*/
+#como-funciona{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'g g g h';
+    justify-content: space-between;
+    align-items: center;
+}
+.comofunc.txt{
+    grid-area: g;
+    display: block;
+    justify-content: left;
+}
+.comofunc.img{
+    grid-area: h;
+    justify-content: right;
+}
+
+/*Cadastro*/
+#cadastro{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'i j j j';
+    justify-content: space-between;
+    align-items: center;
+}
+.cadastr.txt{
+    grid-area: j;
+    display: block;
+    justify-content: left;
+}
+.cadastro.img{
+    grid-area: i;
+    justify-content: right;
+}
