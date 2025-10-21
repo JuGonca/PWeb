@@ -55,7 +55,7 @@ nav{
     align-items: center;
     justify-content: right;
 }
-.login-cadastro button{
+.login-cadastro a{
     margin: 2%;
 }
 
