@@ -164,6 +164,9 @@ section{
 }
 
 /*Rodapé*/
+footer{
+    margin: 5%;
+}
 .rodape{
     display: flex;
     width: 100%;
