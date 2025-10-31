@@ -22,15 +22,30 @@ const db = mysql.createConnection({
 // Tenta conectar
 db.connect((err) => {
   if (err) {
-    console.error('❌ Erro ao conectar ao banco:', err);
+    console.error('Erro ao conectar ao banco:', err);
   } else {
-    console.log('✅ Conectado ao MySQL com sucesso!');
+    console.log('Conectado ao MySQL com sucesso!');
   }
 });
 
 // Rota de teste
 app.get('/', (req, res) => {
   res.send('Servidor e banco estão rodando!');
+});
+
+app.post('/cadastro', (req, res) => {
+  const { email, senha } = req.body;
+
+  const sql = 'INSERT INTO usuarios (email, senha) VALUES ( ?, ?)';
+  db.query(sql, [email, senha], (err, result) => {
+    if (err) {
+      console.error('Erro ao inserir no banco:', err);
+      res.status(500).send('Erro ao cadastrar');
+    } else {
+      console.log('Usuário inserido com sucesso!');
+      res.send('Usuário cadastrado com sucesso!');
+    }
+  });
 });
 
 // Inicia o servidor
